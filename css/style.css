@@ -1,4 +1,7 @@
 /* ***HEADER*** */
+nav {
+    height: 60px;
+}
 
 #small_logo {
 
@@ -9,7 +12,7 @@
 
 #mg_sidebar {
     width: 80px;
-    height: 100vh;
+    height: calc(100vh - 60px);
 }
 
 
@@ -21,7 +24,7 @@
 
 main {
     width: calc(100% - 80px);
-    height: 100%;
+    height: calc(100vh - 60px);
 
 }
 
