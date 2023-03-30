@@ -1,0 +1,31 @@
+/* ***HEADER*** */
+
+#small_logo {
+
+    width: 50px;
+}
+
+/* ***SIDEBAR*** */
+
+#mg_sidebar {
+    width: 80px;
+    height: 100vh;
+}
+
+
+
+
+
+
+/* ***MAIN*** */
+
+main {
+    width: calc(100% - 80px);
+    height: 100%;
+
+}
+
+
+
+
+/* ***FOOTER*** */
