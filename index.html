@@ -90,63 +90,186 @@
             <div class="container">
                 <div class="row  bg-success">
                     <div class="col-12">
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Pariatur, dicta est. Excepturi
-                        praesentium exercitationem et velit? Soluta doloremque recusandae vero incidunt eligendi,
-                        placeat totam, debitis quae perferendis ut commodi doloribus!
+                        <div class="row">
+                            <div class="col-4">
+                                <h4>Example heading <span class="badge bg-secondary">New</span></h4>
+                                <span class="badge bg-secondary">New</span>
+                                <span class="badge bg-secondary">New</span>
+                                <span class="badge bg-secondary">New</span>
+                            </div>
+                            <div class="col-4">
+                                <p>Studenti online negli ultimi 30 minuti</p>
+                                <span>125</span>
+                            </div>
+                            <div class="col-4 text-end">
+                                <a class="btn btn-primary" href="#" role="button">Link</a>
+                                <button class="btn btn-primary" type="submit">Button</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- ***PROSSIME CLASSI*** -->
+                    <div class="row bg-warning">
+                        <div class="col-12 col-lg-8">
+                            <div class="card text-bg-light mb-3">
+                                <div class="card-header h3">Prossime classi</div>
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Nome</th>
+                                            <th scope="col">Stato</th>
+                                            <th scope="col">Last</th>
+                                            <th scope="col">Azioni</th>
+                                            <th scope="col">Azioni</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td scope="row">1</th>
+                                            <td>Mark</td>
+                                            <td>Otto</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">2</th>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                        </tr>
+                                        <tr>
+                                            <td scope="row">3</th>
+                                            <td colspan="2">Larry the Bird</td>
+                                            <td>@twitter</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <!-- ***FAQ*** -->
+                            <div class="card text-bg-light mb-3">
+                                <div class="card-header h3">FAQ</div>
+                                <div class="accordion accordion-flush" id="accordionFlushExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingOne">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                                aria-expanded="false" aria-controls="flush-collapseOne">
+                                                Accordion Item #1
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is
+                                                intended to demonstrate the
+                                                <code>.accordion-flush</code> class. This is the first item's accordion
+                                                body.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                                aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                Accordion Item #2
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is
+                                                intended to demonstrate the
+                                                <code>.accordion-flush</code> class. This is the second item's accordion
+                                                body.
+                                                Let's imagine this being
+                                                filled with some actual content.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="flush-headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                                aria-expanded="false" aria-controls="flush-collapseThree">
+                                                Accordion Item #3
+                                            </button>
+                                        </h2>
+                                        <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="flush-headingThree"
+                                            data-bs-parent="#accordionFlushExample">
+                                            <div class="accordion-body">Placeholder content for this accordion, which is
+                                                intended to demonstrate the
+                                                <code>.accordion-flush</code> class. This is the third item's accordion
+                                                body.
+                                                Nothing more exciting
+                                                happening here in terms of content, but just filling up the space to
+                                                make it
+                                                look, at least at first
+                                                glance, a bit more representative of how this would look in a real-world
+                                                application.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- ***TODO*** -->
+                        <div class="col-12 col-lg-4">
+                            <div class="card text-bg-light mb-3">
+                                <div class="card-header h3">TODO</div>
+                                <div class="card-body">
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-text">
+                                            <input class="form-check-input mt-0" type="checkbox" value=""
+                                                aria-label="Checkbox for following text input">
+                                        </div>
+                                        <input type="text" class="form-control" aria-label="Text input with checkbox">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-text">
+                                            <input class="form-check-input mt-0" type="checkbox" value=""
+                                                aria-label="Checkbox for following text input">
+                                        </div>
+                                        <input type="text" class="form-control" aria-label="Text input with checkbox">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <div class="input-group-text">
+                                            <input class="form-check-input mt-0" type="checkbox" value=""
+                                                aria-label="Checkbox for following text input">
+                                        </div>
+                                        <input type="text" class="form-control" aria-label="Text input with checkbox">
+                                    </div>
+                                </div>
+                            </div>
+
+
+                            <div class="card text-bg-light mb-3">
+                                <div class="card-header"></div>
+                                <div class="card-body">
+                                    <div class="card">
+                                        <img src="./img/stats.jpeg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                            <h5 class="card-title">Card title</h5>
+                                            <p class="card-text">Some quick example text to build on the card title and
+                                                make
+                                                up the bulk of the card's
+                                                content.</p>
+                                        </div>
+                                        <ul class="list-group list-group-flush">
+                                            <li class="list-group-item">An item</li>
+                                            <li class="list-group-item">A second item</li>
+                                            <li class="list-group-item">A third item</li>
+                                        </ul>
+                                        <div class="card-body">
+                                            <a href="#" class="card-link">Card link</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
-
-                <div class="row bg-warning">
-                    <div class="col-12 col-lg-6">
-                        <div class="card text-bg-light mb-3">
-                            <div class="card-header">Header</div>
-                            <div class="card-body">
-                                <h5 class="card-title">Light card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's
-                                    content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-6 ">
-                        <div class="card text-bg-light mb-3">
-                            <div class="card-header">Header</div>
-                            <div class="card-body">
-                                <h5 class="card-title">Light card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's
-                                    content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <div class="card text-bg-light mb-3">
-                            <div class="card-header">Header</div>
-                            <div class="card-body">
-                                <h5 class="card-title">Light card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's
-                                    content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-lg-6">
-                        <div class="card text-bg-light mb-3">
-                            <div class="card-header">Header</div>
-                            <div class="card-body">
-                                <h5 class="card-title">Light card title</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the
-                                    bulk of the card's
-                                    content.</p>
-                            </div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-            </div>
 
 
 
