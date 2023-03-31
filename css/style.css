@@ -21,6 +21,15 @@ nav {
     background-color: darkblue;
 }
 
+/* ***MEDIA QUERY XS*** */
+@media screen and (max-width: 767px) {
+    #mg_sidebar {
+        width: 70px;
+
+    }
+}
+
+/* **************************** */
 
 
 
