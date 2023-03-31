@@ -21,6 +21,16 @@ nav {
     background-color: darkblue;
 }
 
+li:hover {
+    background-color: rgba(128, 128, 128, 0.463);
+}
+
+.onHover:hover {
+    background-color: rgba(128, 128, 128, 0.463);
+}
+
+
+
 /* ***MEDIA QUERY XS*** */
 @media screen and (max-width: 767px) {
     #mg_sidebar {
@@ -55,3 +65,8 @@ main {
 
 
 /* ***FOOTER*** */
+@media screen and (min-width: 767px) {
+    #offcanvasExample {
+        width: 50%;
+    }
+}
