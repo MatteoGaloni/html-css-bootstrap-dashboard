@@ -1,18 +1,24 @@
 /* ***HEADER*** */
 nav {
-    height: 60px;
+    height: 70px;
 }
 
 #small_logo {
 
-    width: 50px;
+    width: 35px;
+}
+
+#bellDropdown {
+    right: 0;
 }
 
 /* ***SIDEBAR*** */
 
 #mg_sidebar {
-    width: 80px;
-    height: calc(100vh - 60px);
+    width: 150px;
+    height: calc(100vh - 70px);
+    background-image: url(../img/sidebar-bg.png);
+    background-color: darkblue;
 }
 
 
@@ -24,11 +30,16 @@ nav {
 
 main {
     width: calc(100% - 80px);
-    height: calc(100vh - 60px);
+    height: calc(100vh - 70px);
     overflow-y: auto;
 
 }
 
+
+/* ****TABLE*** */
+#classNumber {
+    text-align: left;
+}
 
 
 

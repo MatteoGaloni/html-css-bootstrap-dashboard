@@ -46,10 +46,22 @@
                     </button>
                 </div>
 
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-bell" style="color: #f3d512;"></i>
+                    </button>
+                    <ul id="bellDropdow" class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </div>
 
-                <button type="button" class="btn btn-primary position-relative border-0 bg-white">
+
+                <!-- <button type="button" class="btn btn-primary position-relative border-0 bg-white">
                     <i class="fa-solid fa-bell" style="color: #f3d512;"></i>
-                </button>
+                </button> -->
 
             </div>
             </div>
@@ -62,23 +74,35 @@
 
     <!-- ***SIDEBAR AND MAIN*** -->
     <section class="d-flex">
-        <div id="mg_sidebar" class="bg-primary d-flex flex-column justify-content-between align-items-center">
+        <div id="mg_sidebar" class="d-flex flex-column justify-content-between align-items-center py-3">
             <div>
-                <ul class="list-unstyled">
-                    <li>
-                        <a href=""><i class="fa-solid fa-house" style="color: #ffffff;"></i></a>
+                <ul class="list-unstyled table-hover">
+                    <li class="mb-2">
+                        <a class="text-decoration-none text-white" href="#">
+                            <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+                            <span class="d-none d-md-inline">HOME</span>
+                        </a>
                     </li>
-                    <li>
-                        <a href=""><i class="fa-solid fa-house" style="color: #ffffff;"></i></a>
+                    <li class="mb-2">
+                        <a class="text-decoration-none text-white" href="#">
+                            <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+                            <span class="d-none d-md-inline">STATS</span>
+                        </a>
                     </li>
-                    <li>
-                        <a href=""><i class="fa-solid fa-house" style="color: #ffffff;"></i></a>
+                    <li class="mb-2">
+                        <a class="text-decoration-none text-white" href="#">
+                            <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+                            <span class="d-none d-md-inline">SIGNALS</span>
+                        </a>
                     </li>
                 </ul>
             </div>
 
             <div>
-                <a href=""><i class="fa-solid fa-house" style="color: #ffffff;"></i></a>
+                <a class="text-decoration-none text-white" href="#">
+                    <i class="fa-solid fa-house" style="color: #ffffff;"></i>
+                    <span class="d-none d-md-inline">ADMIN</span>
+                </a>
             </div>
         </div>
 
@@ -86,194 +110,366 @@
 
 
 
-        <main class="bg-danger">
-            <div class="container">
-                <div class="row  bg-success">
+        <main>
+
+            <!-- ***BOOLEAN BAR*** -->
+
+            <div class="container-fluid">
+                <div class="row bg-primary text-white py-4">
                     <div class="col-12">
                         <div class="row">
-                            <div class="col-4">
-                                <h4>Example heading <span class="badge bg-secondary">New</span></h4>
-                                <span class="badge bg-secondary">New</span>
-                                <span class="badge bg-secondary">New</span>
-                                <span class="badge bg-secondary">New</span>
+                            <div class="col-12 col-md-6">
+                                <h4>Boolean<span class="badge bg-secondary">Piano blaze</span></h4>
+                                <span class="badge bg-secondary">3 app</span>
+                                <span class="badge bg-secondary">Boolean mobile app</span>
+                                <span class="badge bg-secondary">Boolean web app</span>
+                                <span class="badge bg-secondary">Boolean blog app</span>
                             </div>
-                            <div class="col-4">
+                            <div class="col-12 col-md-4">
                                 <p>Studenti online negli ultimi 30 minuti</p>
                                 <span>125</span>
                             </div>
-                            <div class="col-4 text-end">
-                                <a class="btn btn-primary" href="#" role="button">Link</a>
-                                <button class="btn btn-primary" type="submit">Button</button>
+                            <div class="col-12 col-md-2 text-end">
+                                <span>Nuovo studente</span>
+                                <button class="btn btn-secondary" type="submit">Button</button>
                             </div>
                         </div>
 
                     </div>
-
-                    <!-- ***PROSSIME CLASSI*** -->
-                    <div class="row bg-warning">
-                        <div class="col-12 col-lg-8">
-                            <div class="card text-bg-light mb-3">
-                                <div class="card-header h3">Prossime classi</div>
-                                <table class="table">
-                                    <thead>
-                                        <tr>
-                                            <th scope="col">Nome</th>
-                                            <th scope="col">Stato</th>
-                                            <th scope="col">Last</th>
-                                            <th scope="col">Azioni</th>
-                                            <th scope="col">Azioni</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td scope="row">1</th>
-                                            <td>Mark</td>
-                                            <td>Otto</td>
-                                            <td>@mdo</td>
-                                        </tr>
-                                        <tr>
-                                            <td scope="row">2</th>
-                                            <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
-                                        </tr>
-                                        <tr>
-                                            <td scope="row">3</th>
-                                            <td colspan="2">Larry the Bird</td>
-                                            <td>@twitter</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-                            <!-- ***FAQ*** -->
-                            <div class="card text-bg-light mb-3">
-                                <div class="card-header h3">FAQ</div>
-                                <div class="accordion accordion-flush" id="accordionFlushExample">
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="flush-headingOne">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
-                                                aria-expanded="false" aria-controls="flush-collapseOne">
-                                                Accordion Item #1
-                                            </button>
-                                        </h2>
-                                        <div id="flush-collapseOne" class="accordion-collapse collapse"
-                                            aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Placeholder content for this accordion, which is
-                                                intended to demonstrate the
-                                                <code>.accordion-flush</code> class. This is the first item's accordion
-                                                body.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="flush-headingTwo">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
-                                                aria-expanded="false" aria-controls="flush-collapseTwo">
-                                                Accordion Item #2
-                                            </button>
-                                        </h2>
-                                        <div id="flush-collapseTwo" class="accordion-collapse collapse"
-                                            aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Placeholder content for this accordion, which is
-                                                intended to demonstrate the
-                                                <code>.accordion-flush</code> class. This is the second item's accordion
-                                                body.
-                                                Let's imagine this being
-                                                filled with some actual content.
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="flush-headingThree">
-                                            <button class="accordion-button collapsed" type="button"
-                                                data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
-                                                aria-expanded="false" aria-controls="flush-collapseThree">
-                                                Accordion Item #3
-                                            </button>
-                                        </h2>
-                                        <div id="flush-collapseThree" class="accordion-collapse collapse"
-                                            aria-labelledby="flush-headingThree"
-                                            data-bs-parent="#accordionFlushExample">
-                                            <div class="accordion-body">Placeholder content for this accordion, which is
-                                                intended to demonstrate the
-                                                <code>.accordion-flush</code> class. This is the third item's accordion
-                                                body.
-                                                Nothing more exciting
-                                                happening here in terms of content, but just filling up the space to
-                                                make it
-                                                look, at least at first
-                                                glance, a bit more representative of how this would look in a real-world
-                                                application.
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- ***TODO*** -->
-                        <div class="col-12 col-lg-4">
-                            <div class="card text-bg-light mb-3">
-                                <div class="card-header h3">TODO</div>
-                                <div class="card-body">
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-text">
-                                            <input class="form-check-input mt-0" type="checkbox" value=""
-                                                aria-label="Checkbox for following text input">
-                                        </div>
-                                        <input type="text" class="form-control" aria-label="Text input with checkbox">
-                                    </div>
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-text">
-                                            <input class="form-check-input mt-0" type="checkbox" value=""
-                                                aria-label="Checkbox for following text input">
-                                        </div>
-                                        <input type="text" class="form-control" aria-label="Text input with checkbox">
-                                    </div>
-                                    <div class="input-group mb-3">
-                                        <div class="input-group-text">
-                                            <input class="form-check-input mt-0" type="checkbox" value=""
-                                                aria-label="Checkbox for following text input">
-                                        </div>
-                                        <input type="text" class="form-control" aria-label="Text input with checkbox">
-                                    </div>
-                                </div>
-                            </div>
-
-
-                            <div class="card text-bg-light mb-3">
-                                <div class="card-header"></div>
-                                <div class="card-body">
-                                    <div class="card">
-                                        <img src="./img/stats.jpeg" class="card-img-top" alt="...">
-                                        <div class="card-body">
-                                            <h5 class="card-title">Card title</h5>
-                                            <p class="card-text">Some quick example text to build on the card title and
-                                                make
-                                                up the bulk of the card's
-                                                content.</p>
-                                        </div>
-                                        <ul class="list-group list-group-flush">
-                                            <li class="list-group-item">An item</li>
-                                            <li class="list-group-item">A second item</li>
-                                            <li class="list-group-item">A third item</li>
-                                        </ul>
-                                        <div class="card-body">
-                                            <a href="#" class="card-link">Card link</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
+
+                <!-- ***TABELLA PROSSIME CLASSI*** -->
+                <div class="row mt-3">
+                    <div class="col-12 col-lg-8">
+                        <div class="card text-bg-light mb-3">
+                            <div class="card-header h3">Prossime classi</div>
+                            <table class="table table-hover text-center">
+                                <thead>
+                                    <tr>
+                                        <th scope="col" class="text-start w-50">Nome</th>
+                                        <th scope="col" class="d-none d-md-table-cell">Data inizio</th>
+                                        <th scope="col" class="d-none d-md-table-cell">ROI</th>
+                                        <th scope="col">Stato</th>
+                                        <th scope="col">Azioni</th>
+                                    </tr>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-start">
+                                            <span class="rounded-circle bg-danger p-1">
+                                                <i class="fa-solid fa-code"></i>
+                                            </span>
+                                            <span>Classe 75</span>
+
+                                        </td>
+                                        <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                        <td class="d-none d-md-table-cell">20%</td>
+                                        <td>
+                                            <span class="badge text-bg-success">Done</span>
+                                        </td>
+                                        <td>
+                                            <button class="btn border-secondary px-2">
+                                                <i class="fa-solid fa-pen fa-fw"></i>
+                                            </button>
+                                            <button class="btn my_color-grey border-secondary px-2">
+                                                <i class="fa-solid fa-trash fa-fw"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-start">
+                                            <span class="rounded-circle bg-danger p-1">
+                                                <i class="fa-solid fa-code"></i>
+                                            </span>
+                                            <span>Classe 75</span>
+
+                                        </td>
+                                        <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                        <td class="d-none d-md-table-cell">20%</td>
+                                        <td>
+                                            <span class="badge text-bg-success">Done</span>
+                                        </td>
+                                        <td>
+                                            <button class="btn border-secondary px-2">
+                                                <i class="fa-solid fa-pen fa-fw"></i>
+                                            </button>
+                                            <button class="btn my_color-grey border-secondary px-2">
+                                                <i class="fa-solid fa-trash fa-fw"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-start">
+                                            <span class="rounded-circle bg-danger p-1">
+                                                <i class="fa-solid fa-code"></i>
+                                            </span>
+                                            <span>Classe 75</span>
+
+                                        </td>
+                                        <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                        <td class="d-none d-md-table-cell">20%</td>
+                                        <td>
+                                            <span class="badge text-bg-success">Done</span>
+                                        </td>
+                                        <td>
+                                            <button class="btn border-secondary px-2">
+                                                <i class="fa-solid fa-pen fa-fw"></i>
+                                            </button>
+                                            <button class="btn my_color-grey border-secondary px-2">
+                                                <i class="fa-solid fa-trash fa-fw"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-start">
+                                            <span class="rounded-circle bg-danger p-1">
+                                                <i class="fa-solid fa-code"></i>
+                                            </span>
+                                            <span>Classe 75</span>
+
+                                        </td>
+                                        <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                        <td class="d-none d-md-table-cell">20%</td>
+                                        <td>
+                                            <span class="badge text-bg-success">Done</span>
+                                        </td>
+                                        <td>
+                                            <button class="btn border-secondary px-2">
+                                                <i class="fa-solid fa-pen fa-fw"></i>
+                                            </button>
+                                            <button class="btn my_color-grey border-secondary px-2">
+                                                <i class="fa-solid fa-trash fa-fw"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-start">
+                                            <span class="rounded-circle bg-danger p-1">
+                                                <i class="fa-solid fa-code"></i>
+                                            </span>
+                                            <span>Classe 75</span>
+
+                                        </td>
+                                        <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                        <td class="d-none d-md-table-cell">20%</td>
+                                        <td>
+                                            <span class="badge text-bg-success">Done</span>
+                                        </td>
+                                        <td>
+                                            <button class="btn border-secondary px-2">
+                                                <i class="fa-solid fa-pen fa-fw"></i>
+                                            </button>
+                                            <button class="btn my_color-grey border-secondary px-2">
+                                                <i class="fa-solid fa-trash fa-fw"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-start">
+                                            <span class="rounded-circle bg-danger p-1">
+                                                <i class="fa-solid fa-code"></i>
+                                            </span>
+                                            <span>Classe 75</span>
+
+                                        </td>
+                                        <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                        <td class="d-none d-md-table-cell">20%</td>
+                                        <td>
+                                            <span class="badge text-bg-success">Done</span>
+                                        </td>
+                                        <td>
+                                            <button class="btn border-secondary px-2">
+                                                <i class="fa-solid fa-pen fa-fw"></i>
+                                            </button>
+                                            <button class="btn my_color-grey border-secondary px-2">
+                                                <i class="fa-solid fa-trash fa-fw"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-start">
+                                            <span class="rounded-circle bg-danger p-1">
+                                                <i class="fa-solid fa-code"></i>
+                                            </span>
+                                            <span>Classe 75</span>
+
+                                        </td>
+                                        <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                        <td class="d-none d-md-table-cell">20%</td>
+                                        <td>
+                                            <span class="badge text-bg-success">Done</span>
+                                        </td>
+                                        <td>
+                                            <button class="btn border-secondary px-2">
+                                                <i class="fa-solid fa-pen fa-fw"></i>
+                                            </button>
+                                            <button class="btn my_color-grey border-secondary px-2">
+                                                <i class="fa-solid fa-trash fa-fw"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-start">
+                                            <span class="rounded-circle bg-danger p-1">
+                                                <i class="fa-solid fa-code"></i>
+                                            </span>
+                                            <span>Classe 75</span>
+
+                                        </td>
+                                        <td class="d-none d-md-table-cell">15 Feb 2021</td>
+                                        <td class="d-none d-md-table-cell">20%</td>
+                                        <td>
+                                            <span class="badge text-bg-success">Done</span>
+                                        </td>
+                                        <td>
+                                            <button class="btn border-secondary px-2">
+                                                <i class="fa-solid fa-pen fa-fw"></i>
+                                            </button>
+                                            <button class="btn my_color-grey border-secondary px-2">
+                                                <i class="fa-solid fa-trash fa-fw"></i>
+                                            </button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <!-- ***FAQ*** -->
+                        <div class="card text-bg-light mb-3">
+                            <div class="card-header h3">F.A.Q.</div>
+                            <div class="accordion accordion-flush" id="accordionFlushExample">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
+                                            aria-expanded="false" aria-controls="flush-collapseOne">
+                                            Come aggiungere un nuovo studente?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is
+                                            intended to demonstrate the
+                                            <code>.accordion-flush</code> class. This is the first item's accordion
+                                            body.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
+                                            aria-expanded="false" aria-controls="flush-collapseTwo">
+                                            Come posso accedere alle informazioni del mio account?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is
+                                            intended to demonstrate the
+                                            <code>.accordion-flush</code> class. This is the second item's accordion
+                                            body.
+                                            Let's imagine this being
+                                            filled with some actual content.
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
+                                            aria-expanded="false" aria-controls="flush-collapseThree">
+                                            Posso usare questa dashboard da mobile?
+                                        </button>
+                                    </h2>
+                                    <div id="flush-collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                        <div class="accordion-body">Placeholder content for this accordion, which is
+                                            intended to demonstrate the
+                                            <code>.accordion-flush</code> class. This is the third item's accordion
+                                            body.
+                                            Nothing more exciting
+                                            happening here in terms of content, but just filling up the space to
+                                            make it
+                                            look, at least at first
+                                            glance, a bit more representative of how this would look in a real-world
+                                            application.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ***TODO*** -->
+                    <div class="col-12 col-lg-4">
+                        <div class="card text-bg-light mb-3">
+                            <div class="card-header h3">TODO</div>
+                            <div class="card-body">
+                                <div class="input-group mb-3">
+                                    <div class="input-group-text">
+                                        <input class="form-check-input mt-0" type="checkbox" value=""
+                                            aria-label="Checkbox for following text input">
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Text input with checkbox">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-text">
+                                        <input class="form-check-input mt-0" type="checkbox" value=""
+                                            aria-label="Checkbox for following text input">
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Text input with checkbox">
+                                </div>
+                                <div class="input-group mb-3">
+                                    <div class="input-group-text">
+                                        <input class="form-check-input mt-0" type="checkbox" value=""
+                                            aria-label="Checkbox for following text input">
+                                    </div>
+                                    <input type="text" class="form-control" aria-label="Text input with checkbox">
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="card text-bg-light mb-3">
+                            <div class="card-header"></div>
+                            <div class="card-body">
+                                <div class="card">
+                                    <img src="./img/stats.jpeg" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">Some quick example text to build on the card title and
+                                            make
+                                            up the bulk of the card's
+                                            content.</p>
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">An item</li>
+                                        <li class="list-group-item">A second item</li>
+                                        <li class="list-group-item">A third item</li>
+                                    </ul>
+                                    <div class="card-body">
+                                        <a href="#" class="card-link">Card link</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
 
 
 
         </main>
+        <!-- <div class="offcanvas offcanvas-start show" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+            <div class="offcanvas-header">
+                <h5 class="offcanvas-title" id="offcanvasLabel">Offcanvas</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                Content for the offcanvas goes here. You can place just about any Bootstrap component or custom elements
+                here.
+            </div>
+        </div> -->
 
 
     </section>
