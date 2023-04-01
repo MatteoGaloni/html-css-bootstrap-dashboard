@@ -8,6 +8,10 @@ nav {
     width: 35px;
 }
 
+#searchBar {
+    width: min-content;
+}
+
 #bellDropdown {
     right: 0;
 }
