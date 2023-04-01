@@ -22,7 +22,7 @@ nav {
     width: 150px;
     height: calc(100vh - 70px);
     background-image: url(../img/sidebar-bg.png);
-    background-color: darkblue;
+    background-color: #051e34;
 }
 
 li:hover {
